@@ -6,6 +6,11 @@
 
 <script>
 export default {
+  beforeRouteEnter(to, from, next){
+    setTimeout(() => {
+        next();
+    }, 1500);
+  },
   middleware: 'auth',
 
   metaInfo () {

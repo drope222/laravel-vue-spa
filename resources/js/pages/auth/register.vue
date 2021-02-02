@@ -69,7 +69,7 @@ export default {
   components: {
     LoginWithGithub
   },
-
+  layout: 'authLayout',
   middleware: 'guest',
 
   metaInfo () {

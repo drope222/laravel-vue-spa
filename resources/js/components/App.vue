@@ -32,7 +32,8 @@ export default {
 
   data: () => ({
     layout: null,
-    defaultLayout: 'default'
+    defaultLayout: 'default',
+    nextLayout: null
   }),
 
   metaInfo () {
@@ -52,14 +53,23 @@ export default {
     /**
      * Set the application layout.
      *
-     * @param {String} layout
+     * @param {String} nextLayout
      */
     setLayout (layout) {
       if (!layout || !layouts[layout]) {
         layout = this.defaultLayout
       }
 
-      this.layout = layouts[layout]
+      this.nextLayout = layouts[layout]
+    },
+    /**
+     * Apply the application layout
+     * 
+     * @param {String} layout
+     */
+    applyLayout(){
+        this.layout = this.nextLayout;
+        this.nextLayout = null;
     }
   }
 }

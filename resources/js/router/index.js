@@ -36,6 +36,7 @@ function createRouter () {
 
   router.beforeEach(beforeEach)
   router.afterEach(afterEach)
+  router.beforeResolve(beforeResolve)
 
   return router
 }
@@ -83,6 +84,11 @@ async function beforeEach (to, from, next) {
 
     next(...args)
   })
+}
+//change layout component only when page is ready
+async function beforeResolve(to, from, next){
+  router.app.applyLayout();
+  next();
 }
 
 /**
