@@ -8,3 +8,6 @@ export const UPDATE_USER = 'UPDATE_USER'
 
 // lang.js
 export const SET_LOCALE = 'SET_LOCALE'
+
+// theme.js
+export const SET_DARK_MODE = "SET_DARK_MODE";

@@ -1,9 +1,10 @@
 <template>
-  <div :style="{
+  <div 
+  :class="{'bg-gray-700' : canSuccess}"
+  :style="{
     width: `${percent}%`,
     height: height,
-    opacity: show ? 1 : 0,
-    'background-color': canSuccess ? color : failedColor
+    opacity: show ? 1 : 0,   
   }" class="progress"
   />
 </template>
@@ -16,7 +17,7 @@ export default {
     show: false,
     canSuccess: true,
     duration: 3000,
-    height: '2px',
+    height: '4px',
     color: '#77b6ff',
     failedColor: 'red'
   }),
@@ -95,7 +96,6 @@ export default {
   width: 0%;
   transition: width 0.2s, opacity 0.4s;
   opacity: 1;
-  background-color: #efc14e;
   z-index: 999999;
 }
 </style>

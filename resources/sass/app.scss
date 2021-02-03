@@ -1,8 +1,23 @@
-@import 'variables';
-@import '~bootstrap/scss/bootstrap';
-@import '~sweetalert2/src/sweetalert2';
 
-@import 'elements/card';
-@import 'elements/navbar';
-@import 'elements/buttons';
-@import 'elements/transitions';
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@layer components {
+    .input-field{
+      @apply w-full px-4 py-2 mt-2 text-base text-gray-700 bg-gray-100 border-transparent rounded-lg focus:border-gray-500 focus:bg-white focus:ring-0 dark:bg-gray-800 dark:text-gray-300;
+    }
+
+    .input-checkbox{
+        @apply rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-0 focus:ring-gray-500 dark:bg-gray-800;
+    }
+
+    .btn-primary {
+        @apply block w-full px-4 py-3 font-semibold text-white transition duration-300 ease-in-out transform rounded-lg bg-gray-900 hover:bg-gray-900 focus:outline-none dark:bg-gray-200 dark:text-gray-900;
+    }
+  }
+// form
+//@import "components/form/field.css";
+

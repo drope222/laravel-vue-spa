@@ -35,7 +35,9 @@ export default {
     defaultLayout: 'default',
     nextLayout: null
   }),
-
+  created(){     
+    this.$store.dispatch("theme/checkDarkMode");
+  },
   metaInfo () {
     const { appName } = window.config
 

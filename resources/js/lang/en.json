@@ -35,5 +35,10 @@
   "send_verification_link": "Send Verification Link",
   "resend_verification_link": "Resend Verification Link ?",
   "failed_to_verify_email": "Failed to verify email.",
-  "verify_email_address": "We sent you an email with an the verification link."
+  "verify_email_address": "We sent you an email with an the verification link.",
+  "login_to_account": "Log in to your account",
+  "login_with_google": "Log in with Google",
+  "not_a_member": "Not a member?",
+  "sign_up_now": "Sign up now"
+
 }
