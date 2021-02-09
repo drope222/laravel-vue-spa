@@ -1,21 +1,73 @@
 
 
+/* global.css */
+:root {
+    --color-primary-100: theme('colors.coolGray.100');
+    --color-primary-200: theme('colors.coolGray.200');
+    --color-primary-300: theme('colors.coolGray.300');
+    --color-primary-400: theme('colors.coolGray.400');
+    --color-primary-500: theme('colors.coolGray.500');
+    --color-primary-600: theme('colors.coolGray.600');
+    --color-primary-700: theme('colors.coolGray.700');
+    --color-primary-800: theme('colors.coolGray.800');
+    --color-primary-900: theme('colors.coolGray.900');
+
+
+    --color-primaryBg: theme('colors.white');
+    --color-primaryBgSoft: theme('colors.gray.50');
+}
+
+
+  
+
+
 @import "tailwindcss/base";
+
+
+.theme-dark {
+
+    --color-primaryBg: theme('colors.gray.900');
+    --color-primaryBgSoft:  theme('colors.gray-1000');
+    
+    --color-primaryBgSofter: var(--color-primary-300);
+    --color-primarySoft: var(--color-primary-400);
+    --color-primary: var(--color-primary-500);
+    --color-primaryBold: var(--color-primary-600);
+    --color-onPrimaryBgSofter: var(--color-primary-700);
+    --color-onPrimaryBgSoft: var(--color-primary-800);
+    --color-onPrimaryBg: var(--color-primary-900);
+}
+
+.theme-dark-blue {
+
+    --color-primaryBg: theme('colors.coolGray.800');
+    --color-primaryBgSoft: theme('colors.coolGray.700');
+
+    --color-primaryBgSofter: var(--color-primary-300);
+    --color-primarySoft: var(--color-primary-400);
+    --color-primary: var(--color-primary-500);
+    --color-primaryBold: var(--color-primary-600);
+    --color-onPrimaryBgSofter: var(--color-primary-700);
+    --color-onPrimaryBgSoft: var(--color-primary-800);
+    --color-onPrimaryBg: var(--color-primary-900);
+}
+
+
+
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 
 @layer components {
-    .input-field{
-      @apply w-full px-4 py-2 mt-2 text-base text-gray-700 bg-gray-100 border-transparent rounded-lg focus:border-gray-500 focus:bg-white focus:ring-0 dark:bg-gray-800 dark:text-gray-300;
-    }
 
-    .input-checkbox{
-        @apply rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-0 focus:ring-gray-500 dark:bg-gray-800;
-    }
 
     .btn-primary {
         @apply block w-full px-4 py-3 font-semibold text-white transition duration-300 ease-in-out transform rounded-lg bg-gray-900 hover:bg-gray-900 focus:outline-none dark:bg-gray-200 dark:text-gray-900;
+    }
+
+    //validation
+    .is-invalid {
+        @apply ring ring-red-100 ring-opacity-50 border-red-200 bg-red-100;
     }
   }
 // form

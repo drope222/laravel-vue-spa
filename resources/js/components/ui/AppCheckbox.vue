@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div class="flex  align-middle leading-none">
      
         <input
           :id="id || name"
@@ -8,10 +8,10 @@
           :checked="internalValue"
           @click="handleClick"
           type="checkbox"
-          class="input-checkbox"
+          class="cursor-pointer rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-white text-gray-700 focus:ring-1 focus:ring-offset-0 focus:ring-gray-500 dark:bg-gray-800"
         />
-         <label :for="id || name" class="inline-flex items-center align-middle">
-        <span class="ml-1 text-gray-700  dark:text-gray-300"><slot /></span>
+         <label :for="id || name" class="ml-2 cursor-pointer text-gray-700  dark:text-gray-300">
+        <slot />
       </label>
     </div>
   </div>
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "Checkbox",
+  name: "UiCheckbox",
 
   props: {
     id: { type: String, default: null },

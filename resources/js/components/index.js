@@ -2,20 +2,24 @@ import Vue from 'vue'
 import Card from './Card'
 import Child from './Child'
 import Button from './Button'
-import Checkbox from './Checkbox'
 import { HasError, AlertError, AlertSuccess } from 'vform'
 import ThemeSwitcher from './ThemeSwitcher'
+import AppCheckbox from './ui/AppCheckbox'
+import AppInputValidation from './ui/AppInputValidation'
+import AppButton from './ui/AppButton'
 
 // Components that are registered globaly.
 [
   Card,
   Child,
   Button,
-  Checkbox,
   HasError,
   AlertError,
   AlertSuccess,
-  ThemeSwitcher
+  ThemeSwitcher,
+  AppInputValidation,
+  AppCheckbox,
+  AppButton
 ].forEach(Component => {
   Vue.component(Component.name, Component)
 })

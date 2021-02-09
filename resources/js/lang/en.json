@@ -10,7 +10,7 @@
   "page_not_found": "Page Not Found",
   "go_home": "Go Home",
   "logout": "Logout",
-  "email": "Email",
+  "email": "Email address",
   "remember_me": "Remember Me",
   "password": "Password",
   "forgot_password": "Forgot Your Password?",
@@ -36,9 +36,13 @@
   "resend_verification_link": "Resend Verification Link ?",
   "failed_to_verify_email": "Failed to verify email.",
   "verify_email_address": "We sent you an email with an the verification link.",
-  "login_to_account": "Log in to your account",
+  "login_to_account": "Sign in to Applyster",
   "login_with_google": "Log in with Google",
   "not_a_member": "Not a member?",
-  "sign_up_now": "Sign up now"
+  "sign_up_now": "Sign up now",
+  "is_member": "Already a member?",
+  "sign_in": " Sign In",
+  "sign_up" : "Sign up to Applyster"
+  
 
 }
